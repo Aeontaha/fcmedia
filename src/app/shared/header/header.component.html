@@ -1,0 +1,115 @@
+<header>
+	<!-- start navigation -->
+	<nav class="navbar navbar-expand-lg header-transparent header-reverse glass-effect header-demo" data-header-hover="dark">
+		<div class="container-fluid">
+			<div class="col-auto col-xl-2 col-lg-2 me-lg-0 me-auto">
+				<a class="navbar-brand" [routerLink]="['/']">
+					<img src="assets/images/logo-fcmedia.png" data-at2x="assets/images/logo-fcmedia.png" alt="" class="default-logo" />
+					<img src="assets/images/logo-fcmedia.png" data-at2x="assets/images/logo-fcmedia.png" alt="" class="alt-logo" />
+					<img src="assets/images/logo-fcmedia.png" data-at2x="assets/images/logo-fcmedia.png" alt="" class="mobile-logo" />
+				</a>
+			</div>
+			<div class="col-auto col-xl-7 col-lg-8 menu-order position-static">
+				<button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+					<span class="navbar-toggler-line"></span>
+					<span class="navbar-toggler-line"></span>
+					<span class="navbar-toggler-line"></span>
+					<span class="navbar-toggler-line"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown simple-dropdown">
+							<a href="javascript:void(0);" class="nav-link">Offre</a>
+							<i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+								<li class="dropdown"><a [routerLink]="['indoor']">Indoor</a></li>
+								<li class="dropdown"><a [routerLink]="['outdoor']">Outdoor</a></li>
+								<li class="dropdown"><a [routerLink]="['data-enriched-approach']">Data enriched approach (DEA)</a></li>
+								<li class="dropdown"><a [routerLink]="['programmatique']">Programmatique </a></li>
+								<li class="dropdown"><a [routerLink]="['commande-en-ligne']">Commande en ligne</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown simple-dropdown">
+							<a href="javascript:void(0);" class="nav-link">Expertise</a>
+							<i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+								<li class="dropdown"><a [routerLink]="['notre-patrimoine']">Notre patrimoine</a></li>
+								<li class="dropdown"><a [routerLink]="['couverture']">Couverture</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown simple-dropdown">
+							<a href="javascript:void(0);" class="nav-link">Services</a>
+							<i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink3" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+								<li class="dropdown"><a [routerLink]="['nos-services']">Nos services</a></li>
+								<li class="dropdown">
+									<a href="javascript:void(0);">Nos filiales<i class="fa-solid fa-angle-right"></i></a>
+									<ul class="dropdown-menu">
+										<li><a [routerLink]="['atn']">ATN</a></li>
+										<li><a [routerLink]="['fcproduction']">FC Production</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown simple-dropdown">
+							<a [routerLink]="['realisations']" class="nav-link">Réalisations</a>
+						</li>
+						<li class="nav-item dropdown simple-dropdown">
+							<a href="javascript:void(0);" class="nav-link">A propos</a>
+							<i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink4" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink4">
+								<li class="dropdown"><a [routerLink]="['qui-sommes-nous']">Qui sommes-nous ?</a></li>
+								<li class="dropdown"><a [routerLink]="['nos-engagements']">Nos engagements</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown submenu">
+							<a [routerLink]="['actualite']" class="nav-link">Actualités</a>
+						</li>
+						<li class="nav-item dropdown submenu"></li>
+						<li class="nav-item dropdown simple-dropdown">
+							<a [routerLink]="['contact']" class="nav-link section-link">Contact</a>
+						</li>
+						<div class="header-button ms-20px mobile-display">
+							<a [routerLink]="['commande-en-ligne']" class="btn btn-dark-gray fw-500 btn-small btn-switch-text btn-rounded text-transform-none btn-box-shadow">
+								<span>
+									<span class="btn-double-text me-5px" data-text="En quelques clics">Commande en ligne </span>
+									<span class="label bg-white-ice text-jade border-radius-26px ps-5px pe-5px">New</span>
+								</span>
+							</a>
+						</div>
+					</ul>
+				</div>
+			</div>
+			<div class="col-auto col-xl-3 col-lg-2 text-end lg-ps-0 xs-pe-0">
+				<div class="header-icon">
+					<div class="header-search-icon icon">
+						<a href="#" class="search-form-icon header-search-form"><i class="feather icon-feather-search"></i></a>
+						<!-- start search input -->
+						<div class="search-form-wrapper">
+							<button title="Close" type="button" class="search-close">×</button>
+							<form id="search-form" role="search" method="get" class="search-form text-left" action="">
+								<div class="search-form-box">
+									<h2 class="text-dark-gray text-center fw-600 mb-4 ls-minus-1px">Que cherchez-vous?</h2>
+									<input class="search-input" id="search-form-input5e219ef164995" placeholder="Entrez un mot-clés..." name="s" value="" type="text" autocomplete="off" />
+									<button type="submit" class="search-button">
+										<i class="feather icon-feather-search" aria-hidden="true"></i>
+									</button>
+								</div>
+							</form>
+						</div>
+						<!-- end search input -->
+					</div>
+					<div class="header-button ms-20px">
+						<a [routerLink]="['commande-en-ligne']" class="btn btn-dark-gray fw-500 btn-small btn-switch-text btn-rounded text-transform-none btn-box-shadow">
+							<span>
+								<span class="btn-double-text me-5px" data-text="En quelques clics">Commande en ligne </span>
+								<span class="label bg-white-ice text-jade border-radius-26px ps-5px pe-5px">New</span>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- end navigation -->
+</header>

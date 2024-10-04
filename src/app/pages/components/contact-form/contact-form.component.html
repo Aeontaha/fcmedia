@@ -1,0 +1,66 @@
+<form action="email-templates/contact-form.php" method="post" class="contact-form-style-03">
+	<div class="row justify-content-center">
+		<div class="col-md-9 mb-7 xs-mb-30px">
+			<h4 class="text-white fw-600 mb-0"><span class="text-base-color">Contact.</span> Besoin d'information ?</h4>
+		</div>
+		<div class="col-md-3 text-end d-none d-md-inline-block"></div>
+		<div class="col-md-6">
+			<label for="exampleInputEmail1" class="form-label fs-11 ls-2px text-uppercase text-white mb-0">Votre nom*</label>
+			<div class="position-relative form-group mb-30px">
+				<span class="form-icon"><i class="bi bi-emoji-smile"></i></span>
+				<input class="fs-15 ps-0 border-radius-0px border-color-charcoal-grey bg-transparent form-control required" id="exampleInputEmail1" type="text" name="name" placeholder="Nom complet" />
+			</div>
+		</div>
+		<div class="col-md-6">
+			<label for="exampleInputEmail1" class="form-label fs-11 ls-2px text-uppercase text-white mb-0">Votre E-mail*</label>
+			<div class="position-relative form-group mb-30px">
+				<span class="form-icon"><i class="bi bi-envelope"></i></span>
+				<input
+					class="fs-15 ps-0 border-radius-0px border-color-charcoal-grey bg-transparent form-control required"
+					id="exampleInputEmail2"
+					type="email"
+					name="email"
+					placeholder="Adresse électronique"
+				/>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<label for="exampleInputEmail1" class="form-label fs-11 ls-2px text-uppercase text-white mb-0">Votre téléphone</label>
+			<div class="position-relative form-group mb-30px">
+				<span class="form-icon"><i class="bi bi-telephone"></i></span>
+				<input class="fs-15 ps-0 border-radius-0px border-color-charcoal-grey bg-transparent form-control" id="exampleInputEmail3" type="tel" name="phone" placeholder="Numero de téléphone" />
+			</div>
+		</div>
+		<div class="col-md-6">
+			<label for="exampleInputEmail1" class="form-label fs-11 ls-2px text-uppercase text-white mb-0">Objet</label>
+			<div class="position-relative form-group mb-30px">
+				<span class="form-icon"><i class="bi bi-journals"></i></span>
+				<input class="fs-15 ps-0 border-radius-0px border-color-charcoal-grey bg-transparent form-control" id="exampleInputEmail4" type="text" name="subject" placeholder="Sujet de contact" />
+			</div>
+		</div>
+		<div class="col-12 mb-5">
+			<label for="exampleInputEmail1" class="form-label fs-11 ls-2px text-uppercase text-white mb-0">Votre message</label>
+			<div class="position-relative form-group form-textarea mb-0">
+				<textarea class="fs-15 ps-0 border-radius-0px border-color-charcoal-grey bg-transparent form-control" name="comment" placeholder="Message" rows="4"></textarea>
+				<span class="form-icon"><i class="bi bi-chat-square-dots"></i></span>
+			</div>
+		</div>
+		<div class="position-relative terms-condition-box text-start d-inline-block mb-20px">
+			<label>
+				<input type="checkbox" name="terms_condition" id="terms_condition" value="1" class="terms-condition check-box align-middle required" />
+				<span class="box fs-14"
+					>J'accepte <a [routerLink]="['politique-de-confidentialite']" class="text-decoration-line-bottom"> la politique de Confidentialité & les conditions générales</a></span
+				>
+			</label>
+		</div>
+		<div class="col-xl-7 col-md-8 text-center text-md-start sm-mb-25px"></div>
+		<div class="col-xl-5 col-md-4 text-center text-md-end">
+			<input id="exampleInputEmail5" type="hidden" name="redirect" value="" />
+			<button class="btn btn-small btn-base-color btn-box-shadow btn-round-edge-small primary-font fw-700 submit" type="submit">Envoyer le message</button>
+		</div>
+
+		<div class="col-12">
+			<div class="form-results mt-20px d-none"></div>
+		</div>
+	</div>
+</form>

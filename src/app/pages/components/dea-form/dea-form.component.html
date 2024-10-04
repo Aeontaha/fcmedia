@@ -1,0 +1,49 @@
+<form action="email-templates/contact-form.php" method="post">
+	<div class="position-relative form-group mb-20px">
+		<span class="form-icon"><i class="bi bi-person icon-extra-medium"></i></span>
+		<input
+			class="ps-0 border-radius-0px fs-17 bg-transparent border-color-transparent-white-light placeholder-medium-gray form-control required"
+			type="text"
+			name="name"
+			placeholder="Votre nom*"
+		/>
+	</div>
+	<div class="position-relative form-group mb-20px">
+		<span class="form-icon"><i class="bi bi-envelope icon-extra-medium"></i></span>
+		<input
+			class="ps-0 border-radius-0px fs-17 bg-transparent border-color-transparent-white-light placeholder-medium-gray form-control required"
+			type="email"
+			name="email"
+			placeholder="Votre adresse mail*"
+		/>
+	</div>
+	<div class="position-relative form-group mb-20px">
+		<span class="form-icon"><i class="bi bi-phone icon-extra-medium"></i></span>
+		<input
+			class="ps-0 border-radius-0px fs-17 bg-transparent border-color-transparent-white-light placeholder-medium-gray form-control required"
+			type="number"
+			name="tel"
+			placeholder="Votre Téléphone*"
+		/>
+	</div>
+	<div class="position-relative form-group form-textarea mt-15px mb-25px">
+		<textarea
+			class="ps-0 border-radius-0px fs-17 bg-transparent border-color-transparent-white-light placeholder-medium-gray form-control"
+			name="comment"
+			placeholder="Message"
+			rows="4"
+		></textarea>
+		<span class="form-icon"><i class="bi bi-chat-square-dots icon-extra-medium"></i></span>
+		<input type="hidden" name="redirect" value="" />
+		<div class="position-relative terms-condition-box text-start d-inline-block mb-20px mt-20px">
+			<label>
+				<input type="checkbox" name="terms_condition" id="terms_condition" value="1" class="terms-condition check-box align-middle required" />
+				<span class="box fs-14"
+					>J'accepte <a [routerLink]="['politique-de-confidentialite']" class="text-decoration-line-bottom"> la politique de Confidentialité & les conditions générales</a></span
+				>
+			</label>
+		</div>
+		<button class="btn btn-small btn-white ls-1px mt-30px submit w-100 btn-round-edge-small" type="submit">Envoyer</button>
+		<div class="form-results mt-20px d-none"></div>
+	</div>
+</form>
